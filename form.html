@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>form</title>
+
+<script type="text/javascript">
+	function myfun(){
+		
+		var x =confirm("user created \nfor login page select 'OK' and 'CANCEL' for home page!")
+	
+		if(x ==true){
+			location.replace("login.html")
+		}
+		else{
+			location.replace("strokx.html")
+		}
+	}
+</script>
+
+
+<style type="text/css">
+	body{
+		margin: 50px;
+		border: 10px groove white;
+		padding-right: 20px;
+		padding-left: 20px;
+		background-image: url("STROKX.png");
+		background-repeat: no-repeat;
+ 		
+	}
+
+	button {
+  background-color: lightblue;
+  color: black;
+  border: 2px solid #e7e7e7;
+
+}
+
+button:hover {background-color: white;}
+
+footer {
+			  
+			   background-color: #010f40;
+			   color: white;
+			   text-align: center;
+			}
+
+</style>
+</head>
+
+<body>
+<h1 align="center">REGISTRATION FORM</h1>
+
+<FORM >
+
+first name<input type="text" placeholder ="enter first name">
+second name <input type="text" placeholder ="enter second name">
+3rd name<input type="text" placeholder ="enter last name">
+<br><br> <br>
+password<input type="password"placeholder ="enter ur password"> <br>
+
+<br><br>
+
+select gender<INPUT type ="radio" name ="gender">male
+<input type ="radio" name="gender">female
+
+<br><br><br>
+Place<input type="text" placeholder ="enter your place">
+<br><br> <br>
+
+
+
+<div id="login" align="center" >
+	
+	<button type = "button" value ="submit" onclick ="myfun()" >Submit form </button>
+</div>
+<br>
+
+</FORM>
+
+
+<div >
+	<footer>
+	<h3> CONTACT US :- </h3>
+	<p> Email : shajugeorge45@gmail.com</p>
+	<p> Phone : 8592993862</p>
+	</footer>
+
+</div>
+
+
+<body>
+
+
+</html>

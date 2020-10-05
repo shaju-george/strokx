@@ -3,6 +3,12 @@
 <head>
 	<title> login </title>
 	<style type="text/css">
+
+		body{
+			text-align: center;
+		}
+
+
 		button {
   background-color: white;
   color: black;
@@ -12,7 +18,7 @@
 button:hover {background-color: #e7e7e7;}
 	
 
-	#apple{
+	/*#apple{
 		margin: 50px;
 		border: 10px groove white;
 		
@@ -20,7 +26,105 @@ button:hover {background-color: #e7e7e7;}
 		background-color:lightblue;
 		 width: 80%;
 
+	}*/
+	#apple{
+		padding: 20px;
+		
+		width:320px;
+		height:420px;
+		background:#000;
+		color:#fff;
+		top:50%;
+		left:50%;
+		position: relative;
+		transform: translate(-50%,-50%);
+		box-sizing: border-box;
 	}
+
+	.user{
+		border-radius: 50%;
+		height:30% ;
+		width:45%;
+		
+	}
+
+	#apple input{
+		border:none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline: 	none;
+		color: #fff;
+		font-size: 16px;
+		padding: 6px;
+	}
+	footer  {
+			  margin: 0px;
+			  border: 0px;
+			  padding: 0px;
+			   background-color: #010f40;
+			   color: white;
+			   text-align: center;
+			   
+				width:100%;
+
+			}
+
+.footer .bottom{
+
+	background: #343a40;
+	color: #686868;
+	height:30px;
+	
+	width:100%;
+	text-align: center;
+	
+
+}
+
+#header{
+			  border: 5px ridge white;
+ 			  background-color: white;
+		}
+		#a1{
+			text-align: center;
+			color: blue;
+			padding: 0px;
+			text-shadow: 2px 2px 5px blue;
+			
+		}
+		.logo{
+			  
+        	  width: 120px;
+        	  padding: 25px 0px 20px 40px;
+        	  
+
+        	}
+
+        ul {
+	 		 list-style-type: none;
+	 		 margin: 0;
+	 		 padding: 0;
+	 		 overflow: hidden;
+	  		background-color: #8fafe3;
+	  		
+
+		}
+
+		li {
+  			float: left;
+		}
+
+		li a {
+	  		display: block;
+	  		color: white;
+	  		text-align: center;
+	  		padding: 14px 16px;
+	  		text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+  			background-color: #111;
+		}
 
 
 	</style>
@@ -38,17 +142,70 @@ button:hover {background-color: #e7e7e7;}
 </head>
 <body>
 
+<div id="header">
+
+	<img class="logo" src="STROKX.png" alt="Strokx logo" align="left">
+	<h1 id="a1"> STROKX TECHNOLOGIES </h1>
+
+	
+</div>
+
+<div>
+
+<ul>
+  <li><a class="active"href="strokx.html">HOME</a></li>
+  <li ><a  href="https://strokxtech.com/s/strokx/about.html">ABOUT</a></li>
+  <li><a href="table.html">CAREERS</a></li>
+  <li><a href="login.html">LOGIN</a></li>
+</ul>
+</div>
+
+<h1 style="text-align: center"> Login form </h1>
+<br>
+<br><br><br><br><br><br><br><br><br><br>
+
 <div id ="apple">
-<h1> Login form </h1>
+<img src="user.png" class="user" ><br><br>
 user name <input type="text" placeholder ="enter your user name">
 <br><br> <br>
 password <input type="password"placeholder ="enter ur password"> <br>
-<br><br> <br>
-<div align="center">
-<button type="button" onclick="myfun()"> login  me </button>
+<br><br> 
+<div align="center" >
+<button type="button" style="border-radius: 50px" onclick="myfun()"> login  me </button>
 </div>
 <p> New user <a href="form.html">signin</a></p>
+<a href="#"> Lostyour password?</a>
 <br>
 </div>
+
+<div class="footer">
+	<footer>
+		<br>
+	<div class="footer-left">
+   
+				<p class="footer-links">
+					<a href="strokx.html">Home</a>
+					|
+					<a href="https://strokxtech.com/s/strokx/about.html">About</a>
+					|
+					<a href="table.html">Careers</a>
+					|
+					<a href="login.html">Login</a>|
+				</p>
+			</div>
+		
+	<div class="footer-right">
+	<h3> CONTACT US :- </h3>
+	<p> Email : shajugeorge45@gmail.com</p>
+	<p> Phone : 8592993862</p>
+    </div>
+
+	<div class ="bottom">
+		&copy;
+		strokx.com | all copt rights reserved.
+	</div>
+	</footer>
+
+
 </body>
 </html>
